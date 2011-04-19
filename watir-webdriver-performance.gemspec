@@ -30,7 +30,8 @@ Gem::Specification.new do |s|
     "lib/performance.rb",
     "lib/watir-webdriver-performance.rb",
     "spec/spec_helper.rb",
-    "spec/watir-webdriver-performance_spec.rb"
+    "spec/watir-webdriver-performance_spec.rb",
+    "watir-webdriver-performance.gemspec"
   ]
   s.homepage = %q{http://github.com/90kts/watir-webdriver-performance}
   s.licenses = ["MIT"]
