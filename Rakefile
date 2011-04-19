@@ -11,18 +11,18 @@ require 'rake'
 
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
-  # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "watir-webdriver-performance"
   gem.homepage = "http://github.com/90kts/watir-webdriver-performance"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A simple helper gem for watir-webdriver performance metrics}
+  gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir-webdriver and a compatible browser}
   gem.email = "tim.koops@gmail.com"
   gem.authors = ["Tim Koopmans"]
-  # Include your dependencies below. Runtime dependencies are required when using your gem,
-  # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
-  #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
-  #  gem.add_development_dependency 'rspec', '> 1.2.3'
+  gem.add_runtime_dependency 'watir-webdriver'
+  gem.add_development_dependency 'rspec'
+  gem.add_development_dependency 'zomg'
+  gem.add_development_dependency 'nokogiri'
+  gem.add_development_dependency 'active_support'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
