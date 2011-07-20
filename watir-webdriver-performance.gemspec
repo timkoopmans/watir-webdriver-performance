@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{watir-webdriver-performance}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tim Koopmans"]
-  s.date = %q{2011-04-20}
+  s.date = %q{2011-07-21}
   s.description = %q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir-webdriver and a compatible browser}
   s.email = %q{tim.koops@gmail.com}
   s.extra_rdoc_files = [
@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".rvmrc",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
@@ -30,17 +31,19 @@ Gem::Specification.new do |s|
     "lib/performance.rb",
     "lib/watir-webdriver-performance.rb",
     "spec/spec_helper.rb",
+    "spec/watir-webdriver-performance-non-supported-browser_spec.rb",
     "spec/watir-webdriver-performance_spec.rb",
     "watir-webdriver-performance.gemspec"
   ]
   s.homepage = %q{http://github.com/90kts/watir-webdriver-performance}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.4.2}
+  s.rubygems_version = %q{1.6.2}
   s.summary = %q{A simple helper gem for watir-webdriver performance metrics}
   s.test_files = [
     "examples/basic.rb",
     "spec/spec_helper.rb",
+    "spec/watir-webdriver-performance-non-supported-browser_spec.rb",
     "spec/watir-webdriver-performance_spec.rb"
   ]
 
@@ -54,6 +57,7 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
       s.add_development_dependency(%q<zomg>, [">= 0"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
       s.add_runtime_dependency(%q<watir-webdriver>, [">= 0"])
       s.add_development_dependency(%q<rspec>, [">= 0"])
       s.add_development_dependency(%q<zomg>, [">= 0"])
@@ -66,6 +70,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
       s.add_dependency(%q<rcov>, [">= 0"])
       s.add_dependency(%q<zomg>, [">= 0"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<watir-webdriver>, [">= 0"])
       s.add_dependency(%q<rspec>, [">= 0"])
       s.add_dependency(%q<zomg>, [">= 0"])
@@ -79,6 +84,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>, ["~> 1.5.2"])
     s.add_dependency(%q<rcov>, [">= 0"])
     s.add_dependency(%q<zomg>, [">= 0"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<watir-webdriver>, [">= 0"])
     s.add_dependency(%q<rspec>, [">= 0"])
     s.add_dependency(%q<zomg>, [">= 0"])
