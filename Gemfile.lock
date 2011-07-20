@@ -1,19 +1,19 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    childprocess (0.1.8)
+    childprocess (0.1.9)
       ffi (~> 1.0.6)
     diff-lcs (1.1.2)
-    ffi (1.0.7)
-      rake (>= 0.8.7)
+    ffi (1.0.9)
     git (1.2.5)
     jeweler (1.5.2)
       bundler (~> 1.0.0)
       git (>= 1.2.5)
       rake
-    json_pure (1.5.1)
-    rake (0.8.7)
+    json_pure (1.5.3)
+    rake (0.9.2)
     rcov (0.9.9)
+    rdoc (3.8)
     rspec (2.3.0)
       rspec-core (~> 2.3.0)
       rspec-expectations (~> 2.3.0)
@@ -28,14 +28,14 @@ GEM
     ruby_parser (2.0.6)
       sexp_processor (~> 3.0)
     rubyzip (0.9.4)
-    selenium-webdriver (0.1.4)
-      childprocess (>= 0.1.7)
+    selenium-webdriver (2.1.0)
+      childprocess (>= 0.1.9)
       ffi (>= 1.0.7)
       json_pure
       rubyzip
     sexp_processor (3.0.5)
-    watir-webdriver (0.2.2)
-      selenium-webdriver (>= 0.1.4)
+    watir-webdriver (0.2.6)
+      selenium-webdriver (>= 0.2.2)
     zomg (1.0.2)
       ruby2ruby
 
@@ -46,6 +46,7 @@ DEPENDENCIES
   bundler (~> 1.0.0)
   jeweler (~> 1.5.2)
   rcov
+  rdoc
   rspec (~> 2.3.0)
   watir-webdriver
   zomg

@@ -77,6 +77,7 @@ module Watir
   class Browser
     def performance
       data = driver.execute_script("return window.performance || window.webkitPerformance || window.mozPerformance || window.msPerformance;")
+      raise 'Could not collect performance metrics from your current browser. Please ensure the browser you are using supports collecting performance metrics.' if data.nil?
       PerformanceHelper.new(data).munge
     end
   end
