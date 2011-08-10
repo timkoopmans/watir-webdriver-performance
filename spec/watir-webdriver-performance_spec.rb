@@ -44,4 +44,13 @@ describe "WatirWebdriverPerformance" do
     puts "Page took #{b.performance.summary[:response_time]/1000} seconds to load"
   end
 
+  it "should return true for chrome supported" do
+    b.goto "google.com"
+    b.should be_performance_supported
+  end
+
+  it "should support performance as block" do
+    b.goto "google.com"
+    b.with_performance {|performance| performance.should_not be_nil }
+  end
 end
