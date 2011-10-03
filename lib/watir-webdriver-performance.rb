@@ -13,11 +13,18 @@ module Watir
     def munge
       hash = {}
       @data.each_key do |key|
+        if key == '__fxdriver_unwrapped'
+          next
+        end
         hash[key.to_sym] = {}
         @data[key].each do |k,v|
+          if k == '__fxdriver_unwrapped'
+            next
+          end
           hash[key.to_sym][underscored(k).to_sym] = v
         end
       end
+      
       hash[:summary] = {}
       hash[:summary][:redirect] = hash[:timing][:redirect_end] -
         hash[:timing][:redirect_end] if hash[:timing][:redirect_end] > 0
@@ -28,7 +35,9 @@ module Watir
       hash[:summary][:tcp_connection] = hash[:timing][:connect_end] -
         hash[:timing][:connect_start] if hash[:timing][:connect_start] > 0
       hash[:summary][:tcp_connection_secure] = hash[:timing][:connect_end] -
-        hash[:timing][:secure_connection_start] if hash[:timing][:secure_connection_start] > 0
+        hash[:timing][:secure_connection_start] if 
+          ((hash[:timing][:secure_connection_start] != nil) and 
+           (hash[:timing][:secure_connection_start] > 0))
       hash[:summary][:request] = hash[:timing][:response_start] -
         hash[:timing][:request_start] if hash[:timing][:request_start] > 0
       hash[:summary][:response] = hash[:timing][:response_end] -
