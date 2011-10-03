@@ -28,12 +28,13 @@ describe "WatirWebdriverPerformance" do
     b.performance.summary.should include(:dom_processing)
   end
 
-   it "should get summary data from the performance metrics for redirects" do
+   pending "should get summary data from the performance metrics for redirects" do
     b.goto "http://watirgrid.com"
     b.performance.summary.should include(:redirect)
   end
 
    it "should get summary data from the performance metrics for secure connections" do
+    b.goto "https://github.com/90kts/watirgrid"
     b.performance.summary.should include(:tcp_connection_secure)
   end
 
