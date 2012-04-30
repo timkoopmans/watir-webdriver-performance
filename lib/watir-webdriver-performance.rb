@@ -85,7 +85,12 @@ module Watir
 
   class Browser
     def performance
-      data = driver.execute_script("return window.performance || window.webkitPerformance || window.mozPerformance || window.msPerformance;")
+      data = case driver.browser
+      when :internet_explorer
+        JSON.parse(driver.execute_script("return JSON.stringify(window.performance.toJSON());"))
+      else
+        driver.execute_script("return window.performance || window.webkitPerformance || window.mozPerformance || window.msPerformance;")
+      end
       raise 'Could not collect performance metrics from your current browser. Please ensure the browser you are using supports collecting performance metrics.' if data.nil?
       PerformanceHelper.new(data).munge
     end
