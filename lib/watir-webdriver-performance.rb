@@ -17,6 +17,7 @@ module Watir
           next
         end
         hash[key.to_sym] = {}
+        next unless @data[key].respond_to? :each
         @data[key].each do |k,v|
           if k == '__fxdriver_unwrapped'
             next
