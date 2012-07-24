@@ -5,7 +5,7 @@ describe "WatirWebdriverPerformance" do
   let!(:b) { @b }
 
   before(:all) do
-    @b ||= Watir::Browser.new :chrome
+    @b ||= Watir::Browser.new
   end
 
   after(:all) do
@@ -28,21 +28,10 @@ describe "WatirWebdriverPerformance" do
     b.performance.summary.should include(:dom_processing)
   end
 
-   pending "should get summary data from the performance metrics for redirects" do
-    b.goto "http://watirgrid.com"
-    b.performance.summary.should include(:redirect)
-  end
-
-   it "should get summary data from the performance metrics for secure connections" do
-    b.goto "https://github.com/90kts/watirgrid"
-    b.performance.summary.should include(:tcp_connection_secure)
-  end
-
   it "should get the summary metrics such as Response Time, TTLB and TTFB" do
     b.performance.summary.should include(:time_to_first_byte) # aka "server time"
     b.performance.summary.should include(:time_to_last_byte) # aka "network + server time"
     b.performance.summary.should include(:response_time)
-    puts "Page took #{b.performance.summary[:response_time]/1000} seconds to load"
   end
 
   it "should return true for chrome supported" do
