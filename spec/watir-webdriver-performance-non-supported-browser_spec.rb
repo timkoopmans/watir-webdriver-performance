@@ -5,7 +5,7 @@ describe "WatirWebdriverPerformance-NonSupportedBrowser" do
   let!(:b) { @b }
 
   before(:all) do
-    @b ||= Watir::Browser.new :safari
+    @b ||= Watir::Browser.new :firefox
   end
 
   after(:all) do
