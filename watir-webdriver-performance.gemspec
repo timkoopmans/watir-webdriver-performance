@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "watir-webdriver-performance"
-  s.version = "0.2.3"
+  s.version = "0.2.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tim Koopmans"]
-  s.date = "2014-01-29"
+  s.date = "2014-02-19"
   s.description = "This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir-webdriver and a compatible browser"
   s.email = "tim.koops@gmail.com"
   s.extra_rdoc_files = [
