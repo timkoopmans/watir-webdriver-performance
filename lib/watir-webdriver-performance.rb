@@ -1,6 +1,4 @@
 require 'ostruct'
-require 'json'
-
 module Watir
 
   # Adds helper for window.performance to Watir::Browser.
@@ -90,7 +88,7 @@ module Watir
     def performance
       data = case driver.browser
       when :internet_explorer
-        JSON.parse(driver.execute_script("return JSON.stringify(window.performance.toJSON());"))
+        Object::JSON.parse(driver.execute_script("return JSON.stringify(window.performance.toJSON());"))
       else
         driver.execute_script("return window.performance || window.webkitPerformance || window.mozPerformance || window.msPerformance;")
       end
@@ -108,5 +106,3 @@ module Watir
     end
   end
 end
-
-
