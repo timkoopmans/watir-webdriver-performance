@@ -2,7 +2,7 @@
 
 This gem collects and summarises metrics speficied in the W3C Navigation
 web performance specifications at
-http://w3c-test.org/webperf/specs/NavigationTiming/ when using
+https://dvcs.w3.org/hg/webperf/raw-file/tip/specs/NavigationTiming/Overview.html when using
 watir-webdriver and a compatible browser.
 
 == Example output of browser.performance
