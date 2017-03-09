@@ -9,7 +9,7 @@ describe "WatirWebdriverPerformance-NonSupportedBrowser" do
   end
 
   after(:all) do
-    @b.close
+    @b.close if @b
   end
 
   pending "should raise an error when a non supported browser is encountered" do
