@@ -18,7 +18,12 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir and a compatible browser}
   gem.email = "tim.koops@gmail.com"
   gem.authors = ["Tim Koopmans"]
+
+  # Do not define dependencies in Rakefile                  #
+  # "dependencies should be only defined in the Gemfile"    #
+  # https://github.com/technicalpickles/jeweler/issues/152  #
 end
+
 Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core'
