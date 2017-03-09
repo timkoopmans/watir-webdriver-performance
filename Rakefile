@@ -12,7 +12,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "watir-webdriver-performance"
-  gem.homepage = "https://github.com/samnissen/watir-webdriver-performance"
+  gem.homepage = "https://github.com/90kts/watir-webdriver-performance"
   gem.license = "MIT"
   gem.summary = %Q{A simple helper gem for watir performance metrics}
   gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir and a compatible browser}

@@ -37,7 +37,7 @@ Gem::Specification.new do |s|
     "spec/watir-webdriver-performance_spec.rb",
     "watir-webdriver-performance.gemspec"
   ]
-  s.homepage = "https://github.com/samnissen/watir-webdriver-performance".freeze
+  s.homepage = "https://github.com/90kts/watir-webdriver-performance".freeze
   s.licenses = ["MIT".freeze]
   s.rubygems_version = "2.6.10".freeze
   s.summary = "A simple helper gem for watir performance metrics".freeze
