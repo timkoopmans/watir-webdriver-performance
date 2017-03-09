@@ -18,11 +18,11 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir and a compatible browser}
   gem.email = "scnissen@gmail.com"
   gem.authors = ["Tim Koopmans", "Sam Nissen"]
-  gem.add_runtime_dependency 'watir'
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'zomg'
-  gem.add_development_dependency 'nokogiri'
-  gem.add_development_dependency 'active_support'
+  # gem.add_runtime_dependency 'watir'
+  # gem.add_development_dependency 'rspec'
+  # gem.add_development_dependency 'zomg'
+  # gem.add_development_dependency 'nokogiri'
+  # gem.add_development_dependency 'active_support'
 end
 Jeweler::RubygemsDotOrgTasks.new
 

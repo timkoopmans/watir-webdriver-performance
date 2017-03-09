@@ -52,11 +52,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<jeweler>.freeze, [">= 0"])
       s.add_development_dependency(%q<zomg>.freeze, [">= 0"])
       s.add_development_dependency(%q<rdoc>.freeze, [">= 0"])
-      s.add_runtime_dependency(%q<watir>.freeze, [">= 0"])
-      s.add_development_dependency(%q<rspec>.freeze, [">= 0"])
-      s.add_development_dependency(%q<zomg>.freeze, [">= 0"])
-      s.add_development_dependency(%q<nokogiri>.freeze, [">= 0"])
-      s.add_development_dependency(%q<active_support>.freeze, [">= 0"])
     else
       s.add_dependency(%q<watir>.freeze, [">= 0"])
       s.add_dependency(%q<rspec>.freeze, [">= 0"])
@@ -64,11 +59,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<jeweler>.freeze, [">= 0"])
       s.add_dependency(%q<zomg>.freeze, [">= 0"])
       s.add_dependency(%q<rdoc>.freeze, [">= 0"])
-      s.add_dependency(%q<watir>.freeze, [">= 0"])
-      s.add_dependency(%q<rspec>.freeze, [">= 0"])
-      s.add_dependency(%q<zomg>.freeze, [">= 0"])
-      s.add_dependency(%q<nokogiri>.freeze, [">= 0"])
-      s.add_dependency(%q<active_support>.freeze, [">= 0"])
     end
   else
     s.add_dependency(%q<watir>.freeze, [">= 0"])
@@ -77,11 +67,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<jeweler>.freeze, [">= 0"])
     s.add_dependency(%q<zomg>.freeze, [">= 0"])
     s.add_dependency(%q<rdoc>.freeze, [">= 0"])
-    s.add_dependency(%q<watir>.freeze, [">= 0"])
-    s.add_dependency(%q<rspec>.freeze, [">= 0"])
-    s.add_dependency(%q<zomg>.freeze, [">= 0"])
-    s.add_dependency(%q<nokogiri>.freeze, [">= 0"])
-    s.add_dependency(%q<active_support>.freeze, [">= 0"])
   end
 end
 
