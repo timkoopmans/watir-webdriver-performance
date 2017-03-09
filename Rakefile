@@ -12,18 +12,18 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "watir-webdriver-performance"
-  gem.homepage = "http://github.com/90kts/watir-webdriver-performance"
+  gem.homepage = "https://github.com/90kts/watir-webdriver-performance"
   gem.license = "MIT"
-  gem.summary = %Q{A simple helper gem for watir-webdriver performance metrics}
-  gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir-webdriver and a compatible browser}
+  gem.summary = %Q{A simple helper gem for watir performance metrics}
+  gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir and a compatible browser}
   gem.email = "tim.koops@gmail.com"
   gem.authors = ["Tim Koopmans"]
-  gem.add_runtime_dependency 'watir-webdriver'
-  gem.add_development_dependency 'rspec'
-  gem.add_development_dependency 'zomg'
-  gem.add_development_dependency 'nokogiri'
-  gem.add_development_dependency 'active_support'
+
+  # Do not define dependencies in Rakefile                  #
+  # "dependencies should be only defined in the Gemfile"    #
+  # https://github.com/technicalpickles/jeweler/issues/152  #
 end
+
 Jeweler::RubygemsDotOrgTasks.new
 
 require 'rspec/core'

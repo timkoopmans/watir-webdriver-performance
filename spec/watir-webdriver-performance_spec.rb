@@ -14,33 +14,33 @@ describe "WatirWebdriverPerformance" do
 
   it "should open get performance metrics from the browser" do
     b.goto "google.com"
-    b.performance.should be_an_instance_of(OpenStruct)
+    expect(b.performance).to be_an_instance_of(OpenStruct)
   end
 
   it "should get summary data from the performance metrics" do
     # Summary metrics based on Processing Model of NavigationTiming
     # http://w3c-test.org/webperf/specs/NavigationTiming/#processing-model
-    b.performance.summary.should include(:app_cache)
-    b.performance.summary.should include(:dns)
-    b.performance.summary.should include(:tcp_connection)
-    b.performance.summary.should include(:request)
-    b.performance.summary.should include(:response)
-    b.performance.summary.should include(:dom_processing)
+    expect(b.performance.summary).to include(:app_cache)
+    expect(b.performance.summary).to include(:dns)
+    expect(b.performance.summary).to include(:tcp_connection)
+    expect(b.performance.summary).to include(:request)
+    expect(b.performance.summary).to include(:response)
+    expect(b.performance.summary).to include(:dom_processing)
   end
 
   it "should get the summary metrics such as Response Time, TTLB and TTFB" do
-    b.performance.summary.should include(:time_to_first_byte) # aka "server time"
-    b.performance.summary.should include(:time_to_last_byte) # aka "network + server time"
-    b.performance.summary.should include(:response_time)
+    expect(b.performance.summary).to include(:time_to_first_byte) # aka "server time"
+    expect(b.performance.summary).to include(:time_to_last_byte) # aka "network + server time"
+    expect(b.performance.summary).to include(:response_time)
   end
 
   it "should return true for chrome supported" do
     b.goto "google.com"
-    b.should be_performance_supported
+    expect(b).to be_performance_supported
   end
 
   it "should support performance as block" do
     b.goto "google.com"
-    b.with_performance {|performance| performance.should_not be_nil }
+    b.with_performance {|performance| expect(performance).not_to be_nil }
   end
 end

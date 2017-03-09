@@ -1,10 +1,10 @@
-source "http://rubygems.org"
-gem "watir-webdriver"
+gem "watir"
 
 group :development do
   gem "rspec"
+  gem "zomg"
+  gem "nokogiri"
+  gem "activesupport"
   gem "bundler"
   gem "jeweler"
-  gem "zomg"
-  gem "rdoc"
 end
