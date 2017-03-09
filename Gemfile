@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-gem "watir-webdriver"
+gem "watir"
 
 group :development do
   gem "rspec"

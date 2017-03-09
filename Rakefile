@@ -12,13 +12,13 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "watir-webdriver-performance"
-  gem.homepage = "http://github.com/90kts/watir-webdriver-performance"
+  gem.homepage = "https://github.com/samnissen/watir-webdriver-performance"
   gem.license = "MIT"
-  gem.summary = %Q{A simple helper gem for watir-webdriver performance metrics}
-  gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir-webdriver and a compatible browser}
-  gem.email = "tim.koops@gmail.com"
-  gem.authors = ["Tim Koopmans"]
-  gem.add_runtime_dependency 'watir-webdriver'
+  gem.summary = %Q{A simple helper gem for watir performance metrics}
+  gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir and a compatible browser}
+  gem.email = "scnissen@gmail.com"
+  gem.authors = ["Tim Koopmans", "Sam Nissen"]
+  gem.add_runtime_dependency 'watir'
   gem.add_development_dependency 'rspec'
   gem.add_development_dependency 'zomg'
   gem.add_development_dependency 'nokogiri'
