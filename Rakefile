@@ -16,8 +16,8 @@ Jeweler::Tasks.new do |gem|
   gem.license = "MIT"
   gem.summary = %Q{A simple helper gem for watir performance metrics}
   gem.description = %Q{This gem collects and summarises metrics speficied in the W3C Navigation web performance specifications at http://w3c-test.org/webperf/specs/NavigationTiming/ when using watir and a compatible browser}
-  gem.email = "scnissen@gmail.com"
-  gem.authors = ["Tim Koopmans", "Sam Nissen"]
+  gem.email = "tim.koops@gmail.com"
+  gem.authors = ["Tim Koopmans"]
 end
 Jeweler::RubygemsDotOrgTasks.new
 
